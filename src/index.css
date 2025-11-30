@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-link.active {
+  color: #f9fafb;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.25rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.5rem 2.5rem 3rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 1.5rem 0 1rem;
+}
+
+.hero-text h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.blogs-section {
+  margin-top: 2rem;
+}
+
+.blogs-section h2 {
+  margin-bottom: 1rem;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.blog-card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+}
+
+.blog-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.blog-meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.blog-excerpt {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.blog-read-more {
+  background: #111827;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Portfolio */
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.stat-card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #1f2937;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.stat-value.small {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.portfolio-left,
+.portfolio-right {
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.portfolio-left h2,
+.portfolio-right h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+/* Table */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.returns-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.returns-table th,
+.returns-table td {
+  padding: 0.4rem 0.5rem;
+  text-align: right;
+  border-bottom: 1px solid #111827;
+  white-space: nowrap;
+}
+
+.returns-table th:first-child,
+.returns-table td:first-child {
+  text-align: left;
+}
+
+.year-cell {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.cell-empty {
+  color: #374151;
+}
+
+.cell-positive {
+  color: #bbf7d0;
+  background: rgba(22, 163, 74, 0.15);
+}
+
+.cell-negative {
+  color: #fecaca;
+  background: rgba(220, 38, 38, 0.25);
+}
+
+/* Chart */
+
+.chart-container {
+  width: 100%;
+  height: 320px;
+}
+
+.error-text {
+  color: #fecaca;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .app-main {
+    padding: 1rem 1.25rem 2rem;
+  }
+
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+  }
+}
