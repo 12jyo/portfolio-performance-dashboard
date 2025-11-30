@@ -63,6 +63,10 @@ npm install
 
 npm run dev
 
+## Netlify Link
+https://portfolio-performance-dashboard.netlify.app/
+
+
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/d5fba647-72d1-4c52-a5d3-709a032f905a" />
 
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/2987ebe0-8ef1-4a3a-bf99-514a495e7e73" />
