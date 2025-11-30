@@ -67,7 +67,5 @@ npm run dev
 https://portfolio-performance-dashboard.netlify.app/
 
 
-<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/d5fba647-72d1-4c52-a5d3-709a032f905a" />
-
-<img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/2987ebe0-8ef1-4a3a-bf99-514a495e7e73" />
-
+<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/9e15d152-2ca9-4629-9ea9-a181cd5df25f" />
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/a65b698e-8ede-49ba-bffb-238d101ea95b" />
