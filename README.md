@@ -1,16 +1,69 @@
-# React + Vite
+# React Portfolio Performance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A two-page React application for a **portfolio management company**, built as an assignment.
 
-Currently, two official plugins are available:
+The app:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Shows a **blog-style Home page** with investment insights.
+- Shows a **Portfolio page** with:
+  - Month-on-month **trading returns** by year (heatmap-style table).
+  - **Equity curve** (growth of 1 unit) over time.
+  - **Drawdown curve** (peak-to-trough decline).
+  - Key statistics like **Total Return, CAGR, Max Drawdown, Period**.
+- Uses the provided **Excel NAV report** as the **single source of truth**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** (Vite + React setup)
+- **React Router** – for multi-page navigation
+- **Recharts** – for the equity curve and drawdown charts
+- **xlsx** – to parse the Excel NAV file in the browser
+- **JavaScript (ESNext)** – with hooks (`useState`, `useEffect`)
+- Basic custom **CSS** for layout and styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+react-portfolio-performance/
+├─ public/
+│  └─ data/
+│     └─ nav-report.xlsx       
+├─ src/
+│  ├─ components/
+│  │  ├─ Navbar.jsx
+│  │  ├─ StatsCards.jsx
+│  │  ├─ MonthlyReturnsTable.jsx
+│  │  └─ EquityCurveChart.jsx
+│  ├─ pages/
+│  │  ├─ HomePage.jsx
+│  │  └─ PortfolioPage.jsx
+│  ├─ data/
+│  │  └─ blogs.js             
+│  ├─ utils/
+│  │  └─ portfolioCalculations.js
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css                
+├─ package.json
+├─ vite.config.js
+└─ README.md
+
+## Clone & Install
+
+git clone https://github.com/12jyo/portfolio-performance-dashboard.git
+
+cd react-portfolio-performance
+
+npm install
+
+## Run the App in Dev Mode
+
+npm run dev
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/d5fba647-72d1-4c52-a5d3-709a032f905a" />
+
+<img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/2987ebe0-8ef1-4a3a-bf99-514a495e7e73" />
+
